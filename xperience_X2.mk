@@ -16,6 +16,7 @@ $(call inherit-product, device/realme/X2/device.mk)
 $(call inherit-product, vendor/xperience/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_BOARD_PLATFORM := sm6150
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := X2

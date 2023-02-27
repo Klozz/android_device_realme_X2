@@ -59,6 +59,9 @@ TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_GRALLOC4 := true
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/display
+
 # Display density
 TARGET_SCREEN_DENSITY := 480
 
@@ -155,7 +158,7 @@ VENDOR_SECURITY_PATCH := 2021-10-05
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
