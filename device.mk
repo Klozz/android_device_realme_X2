@@ -300,6 +300,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/nfc_feature.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/nfc_feature.xml
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+TARGET_COMMON_QTI_COMPONENTS := perf
 # Parts
 PRODUCT_PACKAGES += \
     RealmeParts \
@@ -371,17 +374,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/nxp/opensource/sn100x
-
-# Telephony
-PRODUCT_PACKAGES += \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # USB
 PRODUCT_PACKAGES += \
