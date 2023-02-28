@@ -59,9 +59,6 @@ TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_GRALLOC4 := true
 
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/display
-
 # Display density
 TARGET_SCREEN_DENSITY := 480
 
