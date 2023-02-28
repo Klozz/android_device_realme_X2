@@ -819,4 +819,13 @@
         <fqname>@1.0::IOplusRadio/oplus_slot1</fqname>
         <fqname>@1.0::IOplusRadio/oplus_slot2</fqname>
     </hal>
+    <!-- #TheXPerienceProject 20230228 for perf-->
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.iop</name>
+        <version>2.0</version>
+        <interface>
+            <name>IIop</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
